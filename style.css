@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif;  
+}
+
+.wrapper{
+    background: linear-gradient(90deg, rgba(10, 5, 77, 1) 18%, rgba(160, 5, 26, 1) 100%);
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.game-info{
+    background-color: rgba(238,231,247,0.3);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    padding: 8px 45px;
+    border-radius: 22px;
+    font-size: 1.6rem;
+    color: aliceblue;
+    top: 2.8rem;
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+.container{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgba(238,231,247,0.2);
+    max-width: 20rem;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 22px;
+    aspect-ratio: 1/1;
+    padding: 2rem;
+}
+
+.box{
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+}
+
+.box1, .box2, .box4, .box5{
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+}
+.box3, .box6{
+    border-bottom: 3px solid white;
+}
+.box7, .box8{
+    border-right: 3px solid white;
+}
+
+.btn{
+    color: aliceblue;
+    background-color: rgba(238,231,247,0.3);
+    padding: 6px 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.5);
+    position: absolute;
+    bottom: 3rem;
+    cursor: pointer;
+    display: none;
+}
+.btn.active{
+    display: flex;
+}
+
+.win{
+    background-color: rgba(0,255,0,0.4);
+}
+
+#sound{
+    position: absolute;
+    right:3rem;
+    top: 2rem;
+    padding: 15px 5px;
+    border-radius: 100%;
+    color: brown;
+    font-weight: 900;
+}
